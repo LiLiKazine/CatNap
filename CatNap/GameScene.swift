@@ -16,6 +16,30 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        // walk around a bug
+        self.isPaused = true
+        self.isPaused = false
+        
+//        if let bgNode = self.childNode(withName: "background") as? SKSpriteNode,
+//        let bedNode = self.childNode(withName: "bed") as? SKSpriteNode,
+//        let woodVert1 = self.childNode(withName: "wood_vert1") as? SKSpriteNode,
+//        let woodVert2 = self.childNode(withName: "wood_vert2") as? SKSpriteNode,
+//        let woodHori1 = self.childNode(withName: "wood_hori1") as? SKSpriteNode,
+//        let woodHori2 = self.childNode(withName: "wood_hori2") as? SKSpriteNode,
+//        let catShared = self.childNode(withName: "cat_shared") as? SKReferenceNode {
+//            bgNode.texture = SKTexture(imageNamed: "background")
+//            bedNode.texture = SKTexture(imageNamed: "cat_bed")
+//            woodVert1.texture = SKTexture(imageNamed: "wood_vert1")
+//            woodVert2.texture = SKTexture(imageNamed: "wood_vert1")
+//            woodHori1.texture = SKTexture(imageNamed: "wood_horiz1")
+//            woodHori2.texture = SKTexture(imageNamed: "wood_horiz1")
+//            if let catBody = catShared.childNode(withName: "//cat_body") as? SKSpriteNode,
+//            let catHead = catBody.childNode(withName: "cat_head") as? SKSpriteNode,
+//            let catMouth = catHead.childNode(withName: "mouth") as? SKSpriteNode {
+//                catMouth.texture = SKTexture(imageNamed: "cat_mouth")
+//            }
+//        }
+//
         // Get label node from scene and store it for use later
         self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
         if let label = self.label {
