@@ -64,7 +64,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         hookBaseNode = childNode(withName: "hookBase") as? HookBaseNode
         
-//        SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
+        SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
     }
     
     override func didSimulatePhysics() {
